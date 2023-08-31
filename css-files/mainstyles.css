@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* -------------------------    header stuff ------------------------- */
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+    letter-spacing:1.4px ;
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(0,0,0,0.2); */
+    background: linear-gradient( rgb(0,0,0,0.6) , rgb(0,32,65,0.3) );
+    padding: 10px 2%;
+    z-index: 100;
+    /* backdrop-filter: blur(10px);
+    box-shadow: 0 3px 15px 0.1px rgb(0 0 0/.1); */
+    transition: 3s;
+}
+
+header.scrolled{
+    background-color: transparent;
+    background: linear-gradient( rgb(0,0,0,0.2) , rgba(34, 35, 36, 0.1) );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px 0.1px rgb(0 0 0/.3);
+}
+
+a{
+    color: #faf6f6;
+    text-decoration:none ;
+    cursor: pointer;
+    transition: transform 0.3ss ease 0.4s;
+}
+a:hover{
+    color: #36d9eff4;
+}
+
+nav li{
+    font-size: 22px;
+    font-weight: 200;
+    display: inline-block;
+    list-style: none;
+    padding:20px;
+    border-radius: 8px;
+    transition: transform 0.4s ease 0.3s  ;
+}
+nav li:hover{
+    transform:translateY(-4px) ;
+    font-size: 23px; 
+    text-shadow: 2px #f9f9f9; 
+    /* background-color: rgba(52, 52, 49, 0.182); */
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 19px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    border-radius: 17px;
+  } 
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu li a:hover{
+    color: #36d9eff4;
+  }
+    
+  @media (max-width: 1185px) {
+    .hamburger {
+      display: flex;
+    }
+    
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #302c2c8e;
+      top: 60px;
+      right: 5%;
+      width: 40%;
+    }
+    
+    .menu.active {
+      display: flex;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  -------------------------        -------------------------  */
+
+
+.container1{
+    margin: 0%;
+    background-image: url(../images/3d-abstract-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay1{
+    height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(to bottom , rgba(164, 162, 162, 0.2) , rgb(0, 0, 0, 0.4) ); */
+}
+
+h1{
+    font-size: 4em;
+    font-family: 'PT Serif', serif;
+}
+
+.head1{
+    position: absolute;
+    top: 24%;
+    left:25%;
+}
+.head2{
+    position: absolute;
+    top: 24%;
+    left:62%;
+
+}
+
+
+/* h1.head1 :nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:  2px #03a9f4;
+    z-index: 1000;
+} */
+
+
+
+.belowhead{
+    position: absolute;
+    left:36%;
+    top:700px;
+}
+
+
+.cube1{
+    position: absolute;
+    height: 360px;
+    width:360px;
+    left: 10px;
+    top: 740px;
+}
+.cube2{
+    position: absolute;
+    height: 220px;
+    width:220px;
+    left: 100px;
+    top: 1000px;
+    opacity: 0.64;
+}
+.cube3{
+    position: absolute;
+    height: 110px;
+    width:110px;
+    left: 400px;
+    top: 1400px;
+    opacity: 0.65;
+}
+.cube4{
+    position: absolute;
+    height: 190px;
+    width:190px;
+    left: 300px;
+    top: 700px;
+    opacity: 0.68;
+}
+.cube5{
+    position: absolute;
+    height: 310px;
+    width:310px;
+    right: 200px;
+    top: 700px;
+    opacity: 0.98; 
+    z-index: 2;
+} 
+.cube6{
+    position: absolute;
+    height: 165px;
+    width:165px;
+    right: 240px;
+    top: 700px;
+    opacity: 0.99;
+}
+.cube7{
+    position: absolute;
+    height: 180px;
+    width:155px;
+    right: 100px;
+    top: 700px;
+    opacity: 0.99;
+}
+
+
+#myImage{
+    transition: transform 1.9s ease-in 0.7ms;
+}
+
+
+
+.hidden1{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-40%);
+    transition: all 2.2s;
+}
+.hidden2{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%) ;
+    transition: all 2s;
+}
+
+
+
+
+
+
+
+.container2{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-image: url(../images/chess-pic.jpg);
+    height: 110vh;
+    width: 100%;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay2{
+    height: 110vh;
+    width: 100%;
+    background-color: rgba(34, 33, 33, 0.364);
+}
+
+/* .foot{
+    position: relative;
+    top: 100vh;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(28, 26, 26);
+    transition: 4s;
+} */
+
+
+
+/* --------------------------------   quotes stuff   -------------------------------- */
+
+
+.quotessection{
+    height: 66%;
+    width: 80%;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    background-color: rgba(0, 0, 0, 0.01);
+    overflow: hidden;
+    /* overflow: auto; */
+    border-radius: 12px;
+    /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.928); */
+
+}
+
+
+.quotessection_2{
+    display: none;
+
+    height: 76%;
+    width: 80%;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 13%;
+    background-color: rgba(0, 0, 0, 0.01);
+    overflow: hidden;
+    /* overflow: auto; */
+    border-radius: 12px;
+    /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.928); */
+
+}
+
+
+.quote-box {
+    background-color: #f9f9f9;
+    border-left: 10px  solid  #05281d;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    position: relative;
+    opacity: 96%;
+    resize: both;
+    border-radius: 17px;
+    box-shadow:20px #000000 ;
+     
+}
+
+  
+  
+.quote-box:before {
+    content: "\201C"; /* opening quotation mark */
+    color: #758784;
+    font-size: 6em;
+    position: absolute;
+    top: -0.2em;
+    left: -0.4em;
+}
+  
+.quote-box:after {
+    content: "\201D"; /* closing quotation mark */
+    color: #758784;
+    font-size: 6em;
+    position: absolute;
+    bottom: -0.2em;
+    right: -0.4em;
+
+}
+  
+.quote-box p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 0.5em;
+}
+  
+.quote-box cite {
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    text-align: right;
+}
+
+  
+
+/* .quote-box:hover{
+    opacity: 99%;
+} */
+
+
+.active{
+    overflow: auto;
+}
+
+
+#quote1 {
+
+    top: 7%;
+    padding-top: 2%;
+
+    margin-top: 0;
+    margin-right: 50%;
+    margin-left: 4%;
+}
+
+#quote2 {
+    top: 10%;
+    left: 45%;
+    padding-top: 2%;
+
+    margin-top: 0;
+    margin-right: 50%;
+    margin-left: 10%;
+}
+
+#quote3 {
+    top: 15%;
+    padding-top: 2%;
+
+    margin-top: 0;
+    margin-right: 50%;
+    margin-left: 4%;
+}
+
+#quote4 {
+    top: 19%;
+    left: 45%;
+    padding-top: 1%;
+
+    margin-top: 0;
+    margin-right: 50%;
+    margin-left: 10%;
+}
+
+/* --------------------------------      -------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- fading containers --------------------------------*/
+
+.container3{
+    /* background-color: black; */
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient( #004b84 , #2f2d2ded , rgb(0,0,0) );
+    text-align: center;
+    align-items: center;
+    text-rendering: geometricPrecision;
+}
+
+
+.mid-quote{
+    position: relative;
+    top: 400px;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 2.1em;
+    color: beige;
+}
+
+/* .mid-quote p {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.1em;
+} */
+
+
+.container4{
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient( rgb(0,0,0) ,  #2f2d2ded  , rgb(14,14,14,1));
+}
+
+/* --------------------------------      -------------------------------- */
+
+
+
+/* --------------------------------  scrollbar    -------------------------------- */
+
+::-webkit-scrollbar{
+    width: 12px;
+    opacity: 0.2;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent , rgba(33, 222, 219, 0.925));
+    border-radius: 7px;
+    opacity: 0.2;
+
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.88);
+    border-radius: 8px;
+    opacity: 0.2;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent , rgba(0, 0, 255, 0.83));
+    border-radius: 7px;
+    opacity: 0.2;
+
+}
+::-webkit-scrollbar-corner{
+    border-radius: 8px;
+    opacity: 0.2;
+
+}
+
+
+
+/* --------------------------------      -------------------------------- */
+
+/*  #242a34cf */
+
+
+
+
+
+
+
+
+/* ------------------------------ media screens -------------------------------- */
+
+@media screen and (max-width : 1240px){
+    
+    .head1{
+        top: 24%;
+        left:20%;
+    }
+
+    .cube1{
+        height: 273px;
+        width:273px;
+        left: 10px;
+        top: 600px;
+    } 
+    .cube2{
+        height: 200px;
+        width:200px;
+        left: 100px;
+        top: 900px;
+    }
+    .cube3{
+        height: 90px;
+        width:90px;
+        left: 400px;
+        top: 1290px;
+    }
+    .cube4{
+        height: 170px;
+        width:170px;
+        left: 300px;
+        top: 600px;
+    }
+    .cube5{
+        display: none;
+        /* height: 280px;
+        width:280px;
+        right: 20px;
+        top: 40px;
+        opacity: 0.75; */
+    } 
+    .cube6{
+        height: 140px;
+        width:140px;
+        right: 240px;
+        top: 600px;
+    }
+    .cube7{
+        height: 144px;
+        width:124px;
+        right: 100px;
+        top: 600px;
+    }
+    
+}
+
+@media screen and (max-width : 1027px){
+    
+    .head1{
+        position: absolute;
+        top: 24%;
+        left:15%;
+    }
+    .belowhead{
+        left:30%;
+    }
+    
+}
+
+
+@media screen and (max-width : 969px){
+
+    .quotessection{
+        display: none;
+    }
+
+    .quotessection_2{
+        display: block;
+        overflow-y: visible;
+    }
+
+
+}
+
+
+@media screen and (max-width : 780px){
+    .belowhead{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 707px){
+    
+    h1{
+        font-size: 2.7em;
+    }
+    .head1{
+        top: 24%;
+        left:17%;
+    }
+    .head2{
+        top: 24%;
+        left:62%;
+    
+    }
+}
+
+@media screen and (max-width : 698px){
+
+    .mid-quote{
+        top: 400px;
+        font-size: 1.4em;
+    }
+    .cube1{
+        display: none;
+    }
+    .cube4{
+        display: none;
+    }
+
+    .cube2{
+        height: 160px;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width : 600px){
+    .quote-box p {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin-bottom: 0.4em;
+    }
+
+    #quote1 {
+
+        padding-top: 2%;
+    
+        margin-top: 0;
+        margin-right: 40%;
+        margin-left: 4%;
+    }
+    
+    #quote2 {
+        left: 24%;
+        padding-top: 2%;
+    
+        margin-top: 0;
+        margin-right: 30%;
+        margin-left: 10%;
+    }
+    
+    #quote3 {
+        padding-top: 2%;
+    
+        margin-top: 0;
+        margin-right: 40%;
+        margin-left: 4%;
+    }
+    
+    #quote4 {
+        left: 24%;
+        padding-top: 1%;
+    
+        margin-top: 0;
+        margin-right: 30%;
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (max-width : 507px){
+    h1{
+        font-size: 2.2em;
+    }
+    .head1{
+        left:10%;
+    }
+    header{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width : 430px){
+    .logo{
+        font-size: 25px;
+    }
+    .hamburger{
+        margin-right: 150px;
+    }
+}
+
+
+@media screen and (max-width : 345px){
+    h1{
+        font-size: 2em;
+    }
+    .head1{
+        left:6%;
+    }
+}
+
+@media screen and (max-width : 307px){
+    h1{
+        font-size: 1.7em;
+    }
+    .head1{
+        left:4%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  

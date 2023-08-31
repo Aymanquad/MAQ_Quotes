@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
+
+
+body{
+    background-color: #A7ECEE;
+    background: url(../images/ayanokoji_pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    align-content: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    max-width: 500px;
+    position: absolute;
+    top: 19%;
+    /* left: 34%; */
+ 
+    background-color: beige;
+    background: linear-gradient(135deg , rgba(40, 36, 36, 0.662) , rgba(220, 220, 223, 0.33));
+    backdrop-filter: blur(0.1px);
+    border-radius: 15px;
+    border: 3px solid rgb(162, 149, 149, 0.5);
+    box-shadow: 4px 16px 34px 4px rgba(0, 0, 0, 0.998);
+    opacity: 99%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.30em;
+    font-weight: 589;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-rendering: geometricPrecision;
+}
+
+
+
+
+/* -------------------------    header stuff ------------------------- */
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+    letter-spacing:1.4px ;
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(0,0,0,0.2); */
+    background: linear-gradient( rgb(0,0,0,0.2) , rgba(34, 35, 36, 0.1) );
+    padding: 10px 2%;
+    z-index: 1;
+    /* backdrop-filter: blur(10px);
+    box-shadow: 0 3px 15px 0.1px rgb(0 0 0/.1); */
+    box-shadow: 0 5px 15px 0.1px rgb(0 0 0/.3);
+    transition: 3s;
+    background-color: transparent;
+}
+
+
+a{
+    color: #faf6f6;
+    text-decoration:none ;
+    cursor: pointer;
+    transition: transform 0.3ss ease 0.4s;
+}
+a:hover{
+    color: #36d9eff4;
+}
+
+nav li{
+    font-size: 22px;
+    font-weight: 200;
+    display: inline-block;
+    list-style: none;
+    padding:20px;
+    border-radius: 5px;
+    transition: transform 0.4s ease 0.3s;
+}
+nav li:hover{
+    transform:translateY(-3.8px) ;
+    font-size: 23px; 
+    text-shadow: 2px #f9f9f9; 
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 19px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    border-radius: 17px;
+  } 
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu li a:hover{
+    color: #36d9eff4;
+  }
+  
+  @media (max-width: 1185px) {
+    .hamburger {
+      display: flex;
+    }
+    
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #302c2c8e;
+      top: 60px;
+      right: 5%;
+      width: 40%;
+    }
+    
+    .menu.active {
+      display: flex;
+    }
+  }
+/*  -------------------------        -------------------------  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------  scrollbar    -------------------------------- */
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent , rgba(33, 222, 219, 0.925));
+    border-radius: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.88);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent , blue);
+    border-radius: 7px;
+}
+::-webkit-scrollbar-corner{
+    border-radius: 8px;
+}
+
+/* --------------------------------      -------------------------------- */
