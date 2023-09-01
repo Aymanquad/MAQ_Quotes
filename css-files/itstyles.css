@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*:not(header){
+*:not(header , .theory , .show , .showatleft , .showatright ){
   overflow-x: hidden;
 }
 
