@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-
+*:not(header){
+    overflow-x: hidden;
+}
 
 *{
     margin: 0%;
@@ -993,4 +995,106 @@ td {
 }
 
 
+
+/*                   height related queries                         */
+@media  (min-height: 980x){
+
+
+    .content hr{                                    
+        left: 190px;
+        top: 380px;
+    }
+    h1{
+        top: 24vh;
+        left:3.6%;
+        font-size: 34px;
+    }
+    .def{
+        top: 51vh;
+        left:11.1%;
+        height: 100px;
+        width: 260px;
+    }
+    .def p{
+        font-size: 11px;
+        padding-top: 2px;
+    }
+
+
+    #quote1{
+        top: 1045px;
+        left: 4%;
+    }
+
+    #quote2{
+        top: 3550px;
+        left: 36%;
+    }
+
+    #quote3{
+        top: 2190px;
+        left: 4%;
+    }
+    
+    #quote4{
+        top: 2718px;
+        left: 36%;
+    }
+    
+    #quote5{
+        top: 3186px;
+        left: 4%;
+    }
+}
+
+
+@media  (min-height: 780x){
+
+
+    .content hr{                                    
+        left: 190px;
+        top: 340px;
+    }
+    h1{
+        top: 21vh;
+        left:3.3%;
+        font-size: 34px;
+    }
+    .def{
+        top: 50vh;
+        left:11%;
+        height: 100px;
+        width: 260px;
+    }
+    .def p{
+        font-size: 11px;
+        padding-top: 2px;
+    }
+
+    #quote1{
+        top: 1245px;
+        left: 4%;
+    }
+
+    #quote2{
+        top: 3750px;
+        left: 36%;
+    }
+
+    #quote3{
+        top: 2390px;
+        left: 4%;
+    }
+    
+    #quote4{
+        top: 2918px;
+        left: 36%;
+    }
+    
+    #quote5{
+        top: 3286px;
+        left: 4%;
+    }
+
+}
 /* --------------------------------      -------------------------------- */
