@@ -149,7 +149,6 @@ nav li:hover{
 
 section{
 
-    overflow-x: hidden;
     display :grid ;
     align-items: center;
     align-content: center;
@@ -160,7 +159,6 @@ section{
 }
 
 .centerthis{
-  overflow-x: hidden;
     display: grid;
     align-items: center;
     align-content: center;
@@ -168,7 +166,6 @@ section{
 }
 
 .hidden{
-  overflow-x: hidden;
   opacity: 0;
   filter: blur(10px);
   transform: translateX(-100%);
@@ -176,14 +173,12 @@ section{
 }
  
 .hidden1{
-  overflow-x: hidden;
     opacity: 0;
     filter: blur(10px);
     transform: translateX(-100%);
     transition: all 3s;
 }
 .hidden2{
-  overflow-x: hidden;
     opacity: 0;
     filter: blur(10px);
     transform: translateX(100%);
@@ -191,24 +186,21 @@ section{
 }
 
 .show{
-  overflow-x: hidden;
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
 .showatleft{
-  overflow-x: hidden;
     transform: translateX(-11em);
 }
 
 .showatright{
-  overflow-x: hidden;
   transform: translateX(12em);
 }
 
 .theory{
-  overflow-x: hidden;
+
     background-color: rgba(245, 245, 220, 0.882);
     min-height: 560px;
     max-width: 1000px;
@@ -221,17 +213,14 @@ section{
 
 }
 .theory h2{
-  overflow-x: hidden;
     margin-top: 10px ;
 }
 .theory p{
-  overflow-x: hidden;
     display :flex;
     padding: 20px ;
     text-align: left;
 }
 .theory::before{
-  overflow-x: hidden;
     content: '';
     position: absolute;
     inset: 0;
@@ -241,7 +230,6 @@ section{
 
 
 #first{
-  overflow-x: hidden;
     width: 980px;
 
     position: relative;
@@ -257,7 +245,6 @@ section{
 
 
 #second{
-  overflow-x: hidden;
   width: 980px;
 
   position: relative;
@@ -270,7 +257,6 @@ section{
 
 
 #second p{
-  overflow-x: hidden;
   padding: 17px;
 }
 
@@ -279,7 +265,6 @@ section{
  
 
 #third{
-  overflow-x: hidden;
   width: 980px;
   background-color: rgba(39, 39, 35, 0.008);
 
@@ -298,26 +283,21 @@ section{
 
 ::-webkit-scrollbar{
   
-    overflow-x: hidden;
     width: 12px;
 }
 ::-webkit-scrollbar-thumb{
-  overflow-x: hidden;
     background: linear-gradient(transparent , rgba(33, 222, 219, 0.925));
     border-radius: 7px;
 }
 ::-webkit-scrollbar-track{
-  overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.88);
     border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover{
-  overflow-x: hidden;
     background: linear-gradient(transparent , blue);
     border-radius: 7px;
 }
 ::-webkit-scrollbar-corner{
-  overflow-x: hidden;
     border-radius: 8px;
 }
 
@@ -550,7 +530,6 @@ section{
   /* 200px */
   @media (max-width: 543px) {
     .theory{
-      overflow-x: hidden;
       min-height: 560px;
       max-width: 460px;
       margin-top: 15px;
@@ -559,7 +538,6 @@ section{
       margin-left: 2px;
     }
     .theory p,h2 {
-      overflow-x: hidden;
       font-size: 0.66rem;
     }
   }
