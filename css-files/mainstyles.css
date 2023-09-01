@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 
+
 body{
     margin: 0px;
     overflow-x: hidden;
@@ -196,8 +197,8 @@ h1{
 
 
 .belowhead{
-    position: absolute;
-    left:36%;
+    position:relative;
+
     top:700px;
 }
 
@@ -616,9 +617,9 @@ h1{
         top: 24%;
         left:15%;
     }
-    .belowhead{
+    /* .belowhead{
         left:30%;
-    }
+    } */
     
 }
 
@@ -731,7 +732,7 @@ h1{
         left:10%;
     }
     header{
-        width: 97%;
+        width: 100vw;
     }
 }
 
@@ -767,20 +768,4 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
   
